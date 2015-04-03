@@ -21,12 +21,12 @@
   }
 
 #HCB_comment_box .submit {
-    background:none; /* Clear twitter bootstrap style. */
+    background:none;
     background-color:gray;
     border:1px solid white;
-    color: black;
+    color: white;
   }
 
 #HCB_comment_box {
-    color:white;
+    color: black;
   }

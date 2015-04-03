@@ -107,8 +107,15 @@
         .info-school {
             height:35%;
             width:100%;
-            border-bottom:3px solid green;
             
+        }
+		#gsmMessage{
+		margin-left:20%;
+		}
+
+        #gsmAlgInfo{
+
+            margin-left:15%;
         }
 
 
@@ -225,45 +232,69 @@
 
     <div class="wrapper">
        <section class="info-school"><div class="row"> 
-        <div class="col-sm-6 algInfo">
+                                        <div class="hidden-xs">
+                                            <div class="col-sm-6 algInfo">
 
-            <div class="contact">
-            <img class="contact-logo" src="logo.jpg" />
-            <div class="basisinfo"><p><span style="font-weight:bold">Waar?</span> Hoogstraatsebaan 2 <span style="margin-left:47px;">2390 OOSTMALLE</span></p>
-            <p><span style="font-weight:bold">Tel?</span> <span style="margin-left:15px;">03 309 23 00</span></p>
-            <p><span style="font-weight:bold;">Onze website:</span></p> <a href="http://www.immalle.be/"><img class="icon-school" src="Immalle.jpg" /> </a>
-            <p><span style="font-weight:bold">Andere sites:</span></p> 
-            <a class="icons" href="http://www.twitter.com/immaculatamalle" target="_blank"><img src="twitter.png" alt="" width="30"></a>
-        <a class="icons" href="https://www.facebook.com/immaculatamalle" target="_blank"><img src="facebook.png" alt=""></a>
-        <a class="icons" href="http://immalle.smartschool.be/" target="_blank"><img src="smartschool.png" alt="" width="30"></a></div>
-        </div> 
-                 
-        </div>
-          <div class="hidden-xs"> <div class="col-sm-6 message ">
-               
-               
-            <h1>Welkom lezer,</h1>
-            <p>U bent reeds aangekomen op het tablad: info. Hier krijgt u de mogelijkheid informatie op te nemen over de school en zijn richtingen. 
-                In de kader - links naast dit - ziet u de algemene contact info van de school. Wilt u graag wat meer weten over de school? Slaag dit tablad zeker niet over.
-                Veel plezier!
-            </p>
-            <h2>Met vriendelijke groet,</h2>
-            <h2>5IB</h2>
-                </div>
+                                                <div class="contact">
+                                                    <img class="contact-logo" src="logo.jpg" />
+                                                    <div class="basisinfo">
+                                                        <p><span style="font-weight:bold">Waar?</span> Hoogstraatsebaan 2 <span style="margin-left:47px;">2390 OOSTMALLE</span></p>
+                                                        <p><span style="font-weight:bold">Tel?</span> <span style="margin-left:15px;">03 309 23 00</span></p>
+                                                        <p><span style="font-weight:bold;">Onze website:</span></p> <a href="http://www.immalle.be/"><img class="icon-school" src="Immalle.jpg" /> </a>
+                                                        <p><span style="font-weight:bold">Andere sites:</span></p>
+                                                        <a class="icons" href="http://www.twitter.com/immaculatamalle" target="_blank"><img src="twitter.png" alt="" width="30"></a>
+                                                        <a class="icons" href="https://www.facebook.com/immaculatamalle" target="_blank"><img src="facebook.png" alt=""></a>
+                                                        <a class="icons" href="http://immalle.smartschool.be/" target="_blank"><img src="smartschool.png" alt="" width="30"></a>
+                                                    </div>
+                                                </div>
 
-           </div>
+                                            </div>
+                                            <div class="col-sm-6 message ">
+
+
+                                                <h1>Welkom lezer,</h1>
+                                                <p>
+                                                    U bent reeds aangekomen op het tablad: info. Hier krijgt u de mogelijkheid informatie op te nemen over de school en zijn richtingen.
+                                                    In de kader - links naast dit - ziet u de algemene contact info van de school. Wilt u graag wat meer weten over de school? Slaag dit tablad zeker niet over.
+                                                    Veel plezier!
+                                                </p>
+                                                <h2>Met vriendelijke groet,</h2>
+                                                <h2>5IB</h2>
+                                            </div>
+
+                                        </div>
 
            <div class="visible-xs">
+               <div id="gsmAlgInfo" class="col-sm-6 algInfo">
 
-               <div class="col-sm-6 message ">
+                   <div class="contact">
+                       <img class="contact-logo" src="logo.jpg" />
+                       <div class="basisinfo">
+                           <p><span style="font-weight:bold">Waar?</span> Hoogstraatsebaan 2 <span style="margin-left:47px;">2390 OOSTMALLE</span></p>
+                           <p><span style="font-weight:bold">Tel?</span> <span style="margin-left:15px;">03 309 23 00</span></p>
+                           <p><span style="font-weight:bold;">Onze website:</span></p> <a href="http://www.immalle.be/"><img class="icon-school" src="Immalle.jpg" /> </a>
+                           <p><span style="font-weight:bold">Andere sites:</span></p>
+                           <a class="icons" href="http://www.twitter.com/immaculatamalle" target="_blank"><img src="twitter.png" alt="" width="30"></a>
+                           <a class="icons" href="https://www.facebook.com/immaculatamalle" target="_blank"><img src="facebook.png" alt=""></a>
+                           <a class="icons" href="http://immalle.smartschool.be/" target="_blank"><img src="smartschool.png" alt="" width="30"></a>
+                       </div>
+                   </div>
+
+               </div>
                
                
-            <p style="font-weight:bold">Welkom gsm-gebruiker,</p>
-            <p>U bent reeds aangekomen op het tablad: info. Hier vindt u info over de school en de richtingen.
-            </p>
-            <p style="font-weight:bold">Met vriendelijke groet,</p>
-            <p style="font-weight:bold">5IB</p>
-                </div>
+               <div class="col-sm-6 message" id="gsmMessage">
+
+
+                   <p style="font-weight:bold;">Welkom gsm-gebruiker,</p>
+                   <p>
+                       U bent reeds aangekomen op het tablad: info. Hier vindt u info over de school en de richtingen.
+                   </p>
+                   <p style="font-weight:bold">Met vriendelijke groet,</p>
+                   <p style="font-weight:bold">5IB</p>
+               </div>
+				
+				
 
            </div>
            </div>

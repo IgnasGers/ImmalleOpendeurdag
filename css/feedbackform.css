@@ -30,3 +30,8 @@
 #HCB_comment_box {
     color: black;
   }
+
+.home-desc {
+  visibility: hidden;
+}
+

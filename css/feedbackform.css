@@ -34,7 +34,7 @@
 .home-desc {
   visibility: hidden;
 }
-element.style {
+.div:nth-child(9) .a {
     visibility: hidden;
 } 
 

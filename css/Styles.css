@@ -2,6 +2,8 @@
 	color: green;
 }
 
-.carousel-inner{
-	height:400px;
+.jumbotron{
+	width: 500px;
+	position:center
+	
 }

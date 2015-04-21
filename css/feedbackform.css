@@ -35,6 +35,6 @@
   visibility: hidden;
 }
 
-div:nth-child(9) a {
+.home-desc a {
     visibility: hidden;
 }

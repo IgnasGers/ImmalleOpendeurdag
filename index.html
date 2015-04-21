@@ -1,15 +1,45 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    
     <meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title></title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/Styles.css" rel="stylesheet" />
+    <link media="screen" href="css/Styles.css" rel="stylesheet" />
     <style>
         .navbar-inverse {
             background-color: #A2C012;
+        }
+
+        #welcome {
+            font-size:200%;
+            border:3px solid green;
+            background-color: #A2C012;
+            padding:10px;
+            text-align:center;
+            border-radius:5px;
+
+        }
+
+        #home-img-mobile{
+            width:70%;
+            height:70%;
+            margin-left:15%;
+           margin-top:10%;
+            border-radius:5px;
+            border:2px solid black;
+            margin-bottom:10px;
+        }
+        #home-img-desktop{
+             width:60%;
+            height:50%;
+            margin-left:20%;
+           
+            border-radius:5px;
+            border:2px solid black;
+            margin-bottom:10px;
         }
     </style>
 </head>
@@ -52,9 +82,15 @@
 
         </div>
 		<div class="container">
-		<div class="jumbotron">
-			<h2>Welkom op het Imma-Netwerk!</h2>
-		</div>
+            <div class="row">
+                <div class="col-md-12">
+                    
+                        <h1 id="welcome">Welkom op het Immaculata Instituut!</h1>
+                        <img id="home-img-mobile" src="Home.jpg" class="hidden-lg" />
+                        <img id="home-img-desktop" src="Home.jpg" class="hidden-xs" />
+                    
+                </div>
+            </div>
 		</div>
         <div class="modal fade" id="feedback" role="dialog">
             <div class="modal-dialog">
@@ -92,7 +128,7 @@
             </div>
         </div>
 
-        <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="navbar navbar-default navbar-fixed-bottom hidden-lg">
             <div class="container">
                 <p class="navbar-text pull-left">&copy; Design: Maarten Vissers, Yordi Coussement, Mario van Kerckhoven, Wout Wynen, Ignas Gers</p>
                 <a href="http://www.immalle.be/" target="_blank" class="navbar-btn btn-succes pull-right">Bezoek hier onze school website!</a>

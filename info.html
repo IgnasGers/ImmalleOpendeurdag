@@ -17,6 +17,10 @@
             border:2px solid black;
             
         }
+
+        .col-md-4:hover{
+            background-color:green;
+        }
                 
         .col-md-3 {
             background-color:white;
@@ -77,6 +81,8 @@
             border-radius:2px;
             
         }
+
+
         .navbar-inverse {
             background-color:#A2C012;
         }
@@ -90,8 +96,37 @@
             height:100%;
         }
 
+      
+
 
     </style>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.min.js">
+    </script>
+    <script>
+        //$(document).ready(function () {
+           // $('button').click(function () {
+              //  var toAdd = $("input[name=message]").val();
+               // $('.messages').append("<div>" + toAdd + "</div>");
+        //    });
+        //});
+
+
+        //$('.message').on('click', 'li', function () {
+            //$(this).toggleClass('afgevinkt');
+        //});
+
+        $(document).ready(function () {
+            $('.icons').hover(function () {
+                $(this).addClass('iconsH');
+
+            });       
+        });
+
+
+    </script>
+
+
     
     </head>
 <body>

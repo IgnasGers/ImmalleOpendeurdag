@@ -58,6 +58,12 @@
 
         </div>
             <!-- Content -->
+    <div class="container">
+        <div id="HCB_comment_box">Formulier is aan het laden... even geduld aub...</div>
+        <script type="text/javascript" id="hcb">
+            if (!window.hcb_user) { hcb_user = {}; } (function () { var s = document.createElement("script"), l = ("" + window.location).replace(/'/g, "%27") || hcb_user.PAGE, h = "//www.htmlcommentbox.com"; s.setAttribute("type", "text/javascript"); s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&opts=16663&num=50"); if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s); })();
+        </script>
+    </div>
 
 
 
@@ -71,5 +77,51 @@
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 
-</body>
-</html>
+    <script>
+    // This code goes ABOVE the main HTML Comment Box code!
+    // replace the text in the single quotes below to customize labels.
+    hcb_user = {
+        // L10N
+        comments_header : 'Laat hier uw reactie achter!',
+        name_label : 'Naam',
+        content_label: 'Geef hier uw naam in',
+        submit : 'Plaats',
+        no_comments_msg: 'Er heeft nog niemand een reactie geplaatst...',
+        add:'Plaats uw reactie',
+        again: 'Plaats nog een reactie.',
+        said:'said:',
+        prev_page:'<img src="//www.htmlcommentbox.com/static/images/arrow_left.png" class="hcb-icon" title="previous page" alt="[prev]"/>',
+        next_page:'<img src="//www.htmlcommentbox.com/static/images/arrow_right.png" class="hcb-icon" title="next page" alt="[next]"/>',
+        showing:'Showing',
+        to:'to',
+        website_label:'website (optional)',
+        email_label:'email',
+        anonymous:'Onbekend',
+        mod_label:'(mod)',
+        are_you_sure:'Do you want to flag this comment as inappropriate?',
+
+        reply: '<img src="//www.htmlcommentbox.com/static/images/reply.png"/> reply',
+
+        //dates
+        days_ago:'Dagen geleden',
+        hours_ago:'Uren geleden',
+        minutes_ago:'Minuten geleden',
+        within_the_last_minute:'Minder dan een minuut geleden',
+
+        msg_thankyou:'Bedankt voor uw reactie!',
+        msg_approval:'(this comment is not published until approved)',
+        msg_approval_required:'Thank you for commenting! Your comment will appear once approved by a moderator.',
+
+        err_bad_html:'Your comment contained bad html.',
+        err_too_frequent:'Even geduld a.u.b, u postte te snel een nieuwe reactie.',
+        err_comment_empty:'Uw reactie werd niet geplaatst omdat het tekstvak nog leeg is!',
+        err_denied:'Om bepaalde redenen werd uw reactie niet aangeplaatst.',
+
+        //SETTINGS
+        MAX_CHARS: 5000,
+        PAGE:'', // ID of the webpage to show comments for. defaults to the webpage the user is currently visiting.
+        RELATIVE_DATES: true // show dates in the form "X hours ago." etc.
+    };
+
+    </body>
+    </html>

@@ -1,0 +1,123 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mijn Website kleurenpallet</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="http://chocotemplates.com/preview/preview.js" type="text/javascript"></script>
+    <link id="stylesheet" type="text/css" rel="Stylesheet" href="StyleSheet1.css"/>
+    <script>
+
+        //var pallet = {
+        //    nav: "#0000",
+        //    content: "",
+        //    footer: ""
+        //}
+
+        var $pallet1nav = "#0026ff"; /*eerste keuze */
+        var $palletF1nav = "#FFFF00";
+        var $pallet2nav = "#A2C012";
+        var $palletF2nav = "#FAFAFA";
+        var $pallet3nav = "#808080";
+        var $palletF3nav = "#FF0000";
+
+
+                /*​$(document).ready(function() {
+                    $("#temp1").click(function(){
+                        $("#stylesheet").attr("href", "StyleSheet2.css"); http://stackoverflow.com/questions/3829687/change-the-href-of-a-css-link-via-jquery ---- http://stackoverflow.com/questions/19844545/replacing-css-file-on-the-fly-and-apply-the-new-style-to-the-page
+                });​
+            });*/
+
+        $(document).ready(function(){
+            $('#pallet1').click(function () {
+        $('#nav').css("background-color", $pallet1nav);//$pallets[0].nav
+        $('#nav').css("color", $palletF1nav);
+        $('#nav a').css("color", $palletF1nav);
+        $('#content').css("background-color", $pallet1content);
+        $('#footer').css("background-color", $pallet1footer);
+
+         });
+
+            $('#pallet2').click(function () {
+                $('#nav').css("background-color", $pallet2nav);//$pallets[0].nav
+                $('#nav').css("color", $palletF2nav);
+                $('#nav a').css("color", $palletF2nav);
+                $('#content').css("background-color", $pallet2content);
+                $('#footer').css("background-color", $pallet2footer);
+            });
+
+            $('#pallet3').click(function () {
+                $('#nav').css("background-color", $pallet3nav);//$pallets[0].nav
+                $('#nav').css("color", $palletF3nav);
+                $('#nav a').css("color", $palletF3nav);
+                $('#content').css("background-color", $pallet3content);
+                $('#footer').css("background-color", $pallet3footer);
+            });
+        });
+
+
+    </script>
+
+</head>
+<body>
+    <div id="kleurenkiezer">
+        <button id="pallet1">Thema1</button>
+        <button id="pallet3">Thema2</button>
+        <button id="pallet2">Origineel</button>
+    </div>
+    <div id="nav">
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container" role="navigation">
+                <a href="home.html" class="navbar-brand">Immalle</a>
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--Plaats <class="active"> bij het tabblad dat geselecteerd is, nu staat dit bij Home-->
+                        <li class="active"><a href="home.html">Home</a></li>
+                        <li><a href="info.html">Info</a></li>
+                        <li class="dropdown">
+                            <a href="games.html" class="dropdown-toggle" data-toggle="dropdown">Games<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="C:\Users\Maarten\Documents\Maarten\School\Informatica\SOONT\GitRep\NEWEST WEBSITE\browergames.html">Browsergames</a></li>
+                                <li><a href="monogame.html">Monogame</a></li>
+                                <li><a href="3dgame.html">3D-Game</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="it-info.html" class="dropdown-toggle" data-toggle="dropdown">IT-Info<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="online-opslag.html">Online Opslag</a></li>
+                                <li><a href="chats.html">Chats</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text pull-left">Onze Website</p>
+            <a href="http://www.immalle.be/" class="navbar-btn btn-default pull-right">Immalle.be</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
